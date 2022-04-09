@@ -87,19 +87,15 @@ section .container a{
     font-style: italic;  
 }
 
-
-
-        /* MAIN GALLERY */
+/* MAIN GALLERY */
 #gallery .wrapper{
     background-color: #071d46;
 }
-
 .wrapper{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 #first-img{
     max-width: 400px;
     margin: 2px 2px;
@@ -115,7 +111,6 @@ section .container a{
         margin: 2px 2px;
         border: 1px solid #f0ec00;
 }
-
 .card-one{
     display: flex;
     flex-direction: column-reverse;
@@ -137,45 +132,61 @@ section .container a{
     border-radius: 10px;
     padding: 0 5px;
 }
+.air-wrapper{
+    display: block;
+    margin: 50px;
+}
 #airforce-title{
     margin: 10px 0;
     padding: 5px;
+    display: block;
     background-color: #000;
-    color: #ffd000;
     border-radius: 50px;
+    color: #fff;
+}
+
+/* FOOTER */
+footer{
+    height: 100px;
+    background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
+    position: relative;
+}
+.footer-ttl{
+    font-size: 20px;
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    color: #f96d00;
+    display: inline-block;
+}
+footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    margin: 0 30em;
+}
+footer p{
+    position: absolute;
+    top: 5px;
+    left: 46%;
+    color: #ffffff;
+    font-weight: bold;
+}
+footer .container a{
+    text-decoration: none;
+    color: #f0ec00;
+    padding: 5px;
+}
+footer .container a:hover{
+    background-color: red;
+    border-radius: 50px;
+    transition: all 0.5s;
 }
 
 
-        /* FOOTER */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* /* MEDIA QUERY */
+                            /* MEDIA QUERY */
 @media(max-width:768px){
     
     /* HEADER */
@@ -204,4 +215,20 @@ section .container a{
         margin: 2px 0;
     }
 
+    /* FOOTER */
+    footer .container{
+        margin: 0;
+    }
+    .footer-ttl{
+        top:0;
+        margin: 0;
+        left: 90px;
+    }
+    footer .container a{
+        margin-top: 30px;
+    }
+    footer p{
+        top: 30px;
+        left: 160px;
+    }
 }
